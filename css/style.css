@@ -1,0 +1,240 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap'); */
+
+@@font-face {
+    font-family: 'gilroy';
+    src: url("../fonts/gilroy-extrabold-webfont.woff2") format('woff2'),
+        url("../fonts/gilroy-extrabold-webfont.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../fonts/gilroy-blackitalic-webfont.woff2) format('woff2'),
+        url(../fonts/gilroy-blackitalic-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+/* Обнуление стилей */
+*,
+*::before *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+/* По умолчанию 16 рх */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "gilroy";
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+
+
+/* Берем шрифты с собой */
+/* Два варианта подключения шрифта */
+
+/*
+ 1. Удаленное подключение. Подключенине из внешнего источника (по ссылке)
+ 2. Локальное подключение. Подключение локальных файлов.
+ */
+
+/* Свойства шрифта */
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* font-family :"имя шрифта", "имя шрифта" (если не подключится первый шрифт), тип шрифта */
+
+
+/* 
+ serif - шрифты с зачечками (антиквенные), типа Times
+sans-serif - рубленные шрифты ( шрифты без засечек или гротески), типичный представитель Arial,
+cursive - курсивные шрифты;
+fantasy - декоративные шрифты;
+monospace - моноширинные шрифты, ширина каждого символаа в таком семействе одинаковая ( шрифт Courier)
+*/
+
+font-size: размер (px, %, em, rem)
+/* Определяет размер шрифта єлемента  */
+
+
+font-style;
+/* font-style;
+Определяет начертание шрифта - обычное, курсивное или наклонное.
+normal - Обычное начертаниее текста
+italic - курсивное начертание
+oblique - наклонное начертание. Курсив и наклонный шрифт при всей их похожести не одно и тоже
+*/
+
+font-weight
+/* font-weight 
+Устанавливает насыщенность шрифта
+100 - thin
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+900 - black
+*/
+
+.text {
+    font-weight: 900;
+}
+
+
+/* Свойства текста */
+
+/* color 
+Определяет цвет текста. Для задания цветов обычно используется числа в шестнадцатеричном коде, либо с помощью RGB
+*/
+
+.text {
+    color:chocolate;
+    text-align: justif y;
+}
+
+.image {
+    text-align: left;
+}
+
+
+/* text-align
+ Определяет горизонтальное выравнивание текста в пределах элемента.
+ center - выравнивание текста по центру.
+ justify - выравнивание по ширине, что означает выравнивание по левому и правому краю
+ left- выравнивание текста по левому краю
+ right - по правому краю  
+*/
+
+
+
+.text { 
+    text-decoration: underline;
+}
+/* text-decoration 
+Добавляет оформление текста в виде его подчеркивания, перечеркивания, линии над и под тестом и т.д
+Одновременно можно применить более одного стиля, перечисляя значения через пробел.
+line-through - Создает перечеркнутый текст
+overline - Линия проходит над тесктом 
+underline - Подчекнутый текст
+none - отменяет все эффекты, в том числе почеркивание у ссылок которое задано по умолчанию
+*/
+
+.text>span {
+    text-decoration: line-through;
+}
+
+/* text-shadow:горизонтальное_ вертикальное_ смещение, размытие, цвет;
+Добавляет тень к тексту
+Пример text-shadow : 1px, 1px, 1px, #000;
+*/
+
+.text {
+    text-shadow: 3px 2px 10px #6338c7
+}
+
+
+/* text-transform
+Управляет преобразованием текста в заглавные или прописные символы.
+capitalize - Первый символ каждого слова в пердложении будет заглавный.
+lowercase - все символы текста становятса строчными. (нижний регистр)
+uppercase - все символы становятся прописными. ( верхний регистр) 
+none - Не имеет регистр символов.
+*/
+
+.text {
+    text-transform: ;
+}
+
+
+.menu a {
+    text-transform: uppercase;
+}
+
+
+/* line-height
+Устанавливает межстрочный интевал текста, Широко применяется при версте текста
+*/
+
+.text {
+    line-height: 150%;
+}
+
+/* letter-spacing
+Определяет интервал между символами (буквами). Используется когда нужно разрядить текст.
+word-spacing - межсловестный  интервал
+*/
+
+.text {
+    letter-spacing: 1px;
+}
+
+.text {
+    word-spacing: 15px;
+}
+
+/* text-indent
+Устанвливает величину текста отступа первой строки блока текста.
+Что-то типа карсной строки.
+*/
+
+.text {
+    text-indent: 50px;
+}
+
+/* white-space
+Управляет свойствами пробелов между словами.ПРименяется в основном со значением nowrap которое запрещает пернос строки. 
+Таким образом весь текст отображается в одну строку и не ломается.
+Значение normal вернет все как было.
+*/
+
+.text {
+    white-space: normal;
+}
